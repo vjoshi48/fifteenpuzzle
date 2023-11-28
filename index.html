@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>15 Puzzle Project</title>
+  </head>
+  <body>
+    <div>
+      <!-- Background selection dropdown -->
+      <label for="backgroundSelect">Select Background:</label>
+      <select id="backgroundSelect" onchange="changeBackground()">
+        <option value="">Select a background</option>
+        <option value="background1.png">Background 1</option>
+        <option value="background2.png">Background 2</option>
+        <option value="background3.png">Background 3</option>
+        <option value="background4.png">Background 4</option>
+      </select>
+
+      <!-- Puzzle grid container -->
+      <table id="puzzleGrid" style="border: 1px solid black"></table>
+    </div>
+
+    <!-- Shuffle button -->
+    <button onclick="shufflePuzzle()">Shuffle</button>
+
+    <!-- Right-aligned paragraph with links -->
+    <div class="validator-links">
+      <a href="https://validator.w3.org/" target="_blank">
+        <img src="html.png" alt="HTML Validator" />
+      </a>
+      <a href="https://jigsaw.w3.org/css-validator/" target="_blank">
+        <img src="css.png" alt="CSS Validator" />
+      </a>
+      <!-- Optional JSLint link -->
+      <a href="https://www.jslint.com/" target="_blank">
+        <img src="js.png" alt="JSLint" />
+      </a>
+    </div>
+    <script src="fifteen.js"></script>
+  </body>
+</html>
