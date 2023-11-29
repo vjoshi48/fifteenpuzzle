@@ -1,4 +1,25 @@
 /* Styles for puzzle cells */
+body {
+  overflow: hidden;
+}
+
+.font {
+  font-family: "Comic Sans MS", "Comic Sans";
+}
+
+h1 {
+  margin: 0;
+}
+
+.container {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 71%;
+}
+
 .puzzle-cell {
     width: 100px;
     height: 100px;
@@ -36,12 +57,12 @@
   .puzzle-cell[data-value='15'] { background-position: -200px -300px; }
 
   .validator-links {
-    text-align: right;
     margin-top: 10px;
+    margin-left: auto;
   }
 
   .validator-links img {
     margin-left: 10px;
-    max-width: 100px;
-    max-height: 100px;
+    max-width: 70px;
+    max-height: 70px;
   }
